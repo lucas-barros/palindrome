@@ -50,7 +50,8 @@
     "watch": "webpack --mode development --hide-modules --watch --config resources/build/webpack.config.js",
     "build": "webpack --mode development --progress --config resources/build/webpack.config.js ",
     "build:production": "webpack --mode production --progress --config resources/build/webpack.config.js ",
-    "test": "jest"
+    "test": "jest",
+    "heroku-postbuild": "yarn build:production"
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
