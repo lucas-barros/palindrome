@@ -1,5 +1,7 @@
 # Palindrome tester
 
+Check out the [live demo][heroku link] on heroku!
+
 ## Technologies
 - Nodejs
 - Express node framework
@@ -50,3 +52,5 @@ yarn test
 - GET - /api/:string
 
 This endpoint returns status code 200 if string is a palindrome and status code 400 if it is not.
+
+[heroku link]: https://palindrome-tester.herokuapp.com/

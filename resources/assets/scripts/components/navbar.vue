@@ -14,7 +14,7 @@
       <div id="navMenu" class="navbar-menu">
         <div class="navbar-end">
           <div class="navbar-item">
-            <a class=" button is-primary is-rounded" target="_blank" href="">
+            <a class=" button is-primary is-rounded" target="_blank" href="https://github.com/lucas-barros/palindrome">
               <github-icon></github-icon> Github
             </a>
           </div>
