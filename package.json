@@ -1,0 +1,83 @@
+{
+  "name": "palindrome-tester",
+  "version": "1.0.0",
+  "description": "Test if string is palindrome",
+  "main": "resources/palindrome.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "bulma": "^0.7.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "^4.16.3",
+    "feather-icons": "^4.7.3",
+    "hbs": "~4.0.1",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5",
+    "vue": "^2.5.17",
+    "vue-feather-icons": "^4.7.1",
+    "vue-resource": "^1.5.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.6.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "jest": "^23.6.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "stylelint": "^9.5.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-merge": "^4.1.4",
+    "yargs": "^12.0.2"
+  },
+  "engines": {
+    "node": ">= 6.14.0"
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "watch": "webpack --mode development --hide-modules --watch --config resources/build/webpack.config.js",
+    "build": "webpack --mode development --progress --config resources/build/webpack.config.js ",
+    "build:production": "webpack --mode production --progress --config resources/build/webpack.config.js ",
+    "test": "jest"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "no-empty-source": null,
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "extend",
+            "at-root",
+            "debug",
+            "warn",
+            "error",
+            "if",
+            "else",
+            "for",
+            "each",
+            "while",
+            "mixin",
+            "include",
+            "content",
+            "return",
+            "function"
+          ]
+        }
+      ]
+    }
+  }
+}
