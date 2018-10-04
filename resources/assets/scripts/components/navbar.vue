@@ -3,7 +3,7 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <rotate-icon></rotate-icon> <span class="p-l-sm">Polidrome</span>
+          <rotate-icon></rotate-icon> <span class="p-l-sm">Palindrome</span>
         </a>
         <div class="navbar-burger burger" data-target="navMenu">
           <span></span>
